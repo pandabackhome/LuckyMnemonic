@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 40px;
+}
+
+.windows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column {
+  width: 120px;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.word-column {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.selector {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  border: 2px solid #ff4d4f;
+  border-radius: 6px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  box-shadow: 0 0 12px rgba(255, 77, 79, 0.6);
+}
+
+.select-btn {
+  margin-top: 12px;
+  width: 90px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.select-btn:hover {
+  background: #3b82f6;
+}
+
+.result-word {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 64px;
+  text-align: center;
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  transform: translateY(100px);
+
+  color: #facc15;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #22c55e;
+}
+
+.refresh-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #f59e0b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+  background: #facc15;
+}
